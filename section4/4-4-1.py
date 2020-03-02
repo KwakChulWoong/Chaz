@@ -41,12 +41,10 @@ with open('D:/atom_py/section4/member.json', 'w') as outfile:
 with open('D:/atom_py/section4/member.json', 'r') as infile:
     r=json.load(infile)
 
-
     for p in r['people'] :
         print('Name :'+p['name'])
         print('Website :'+p['website'])
         print('From :'+p['from'])
-
 
         t=p['grade']
         grade =''

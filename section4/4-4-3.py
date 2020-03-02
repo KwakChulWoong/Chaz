@@ -9,4 +9,9 @@ url="https://api.github.com/repositories"
 savename='D:/atom_py/section4/member.json'
 
 if not os.path.exists(url) :
-    req.urlretrieve(url,svaename)
+    req.urlretrieve(url,savename)
+
+items=json.loads(open(savename, "r", encoding="utf-8").read())
+
+for item in items :
+    print(item["full_name"]+" - "+item["owner"]["url"])
