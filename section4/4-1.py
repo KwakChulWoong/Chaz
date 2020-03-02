@@ -14,7 +14,7 @@ with open(bfilename, "wb") as f:
     pickle.dump(data2, f)
     pickle.dump(data3, f)
     print('')
- 
+
 # 텍스트 쓰기
 with open(tfilename, "wt") as f:
     f.write(str(data1))
@@ -23,6 +23,7 @@ with open(tfilename, "wt") as f:
     f.write('\n')
     f.writelines('\n'.join(data3))
 # 문서가 깨져서 읽어지면 위에 두 작업 바이너리 쓰기(객체 직렬화) 텍스트 쓰기 작업을 해야한다
+
 
 # 바이너리로 읽기(역직렬화)
 with open(bfilename, 'rb') as f:

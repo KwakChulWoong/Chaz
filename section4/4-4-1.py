@@ -33,6 +33,7 @@ d=json.loads(e)
 print(type(d))
 print(d)
 
+
 # 직렬화
 with open('D:/atom_py/section4/member.json', 'w') as outfile:
     json.dump(data, outfile)
@@ -52,4 +53,3 @@ with open('D:/atom_py/section4/member.json', 'r') as infile:
             grade = grade + ' ' + str(g)
         print('Grade :', grade.lstrip())
         print('')
-        
