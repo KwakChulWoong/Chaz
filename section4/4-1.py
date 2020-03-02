@@ -13,6 +13,7 @@ with open(bfilename, "wb") as f:
     pickle.dump(data1, f) #dumps(문자열) => loads / dump => load
     pickle.dump(data2, f)
     pickle.dump(data3, f)
+    print('')
 
 # 텍스트 쓰기
 with open(tfilename, "wt") as f:
