@@ -15,3 +15,5 @@ items=json.loads(open(savename, "r", encoding="utf-8").read())
 
 for item in items :
     print(item["full_name"]+" - "+item["owner"]["url"])
+
+    

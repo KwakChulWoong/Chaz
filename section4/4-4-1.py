@@ -52,3 +52,4 @@ with open('D:/atom_py/section4/member.json', 'r') as infile:
             grade = grade + ' ' + str(g)
         print('Grade :', grade.lstrip())
         print('')
+        
